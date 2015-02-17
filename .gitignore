@@ -6,3 +6,5 @@
 /build
 /app
 .idea
+*.bak
+*.bat

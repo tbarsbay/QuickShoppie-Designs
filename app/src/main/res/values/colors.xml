@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="app_theme">#DF5D5D</color>
+    <color name="primary">@color/app_theme</color>
+    <color name="primary_transparent">#98DF5D5D</color>
+    <color name="primary_dark">#ff9f4f4f</color>
+    <color name="accent">#fff</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#4CAF50</color>
+
+    <color name="navdrawer_text_color">#000</color>
+    <color name="navdrawer_text_color_selected">#fff</color>
+    <color name="navdrawer_icon_tint">#000</color>
+    <color name="navdrawer_icon_tint_selected">#FFF</color>
+    <color name="navdrawer_selected_background">@color/primary</color>
+
+    <color name="test">#ffe5e213</color>
+
+</resources>

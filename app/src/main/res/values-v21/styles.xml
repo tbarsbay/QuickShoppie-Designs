@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="QS" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+
+        <item name="android:actionButtonStyle">@style/ActionButton</item>
+        <item name="toolbarNavigationButtonStyle">@style/NavigationIcon</item>
+    </style>
+</resources>

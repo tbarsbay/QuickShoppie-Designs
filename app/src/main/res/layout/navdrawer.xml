@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:id="@+id/navdrawer"
+	android:background="#ffa0a0a0"
+	android:fitsSystemWindows="true" >
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/chosen_account_view"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/profile_cover_image" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:id="@+id/chosen_account_content_view">
+
+                    <ImageView
+                        android:id="@+id/expand_account_box_indicator"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginLeft="16dp"
+                        android:paddingBottom="16dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:scaleType="center"
+                        android:src="@drawable/expand" />
+
+                    <TextView
+                        android:id="@+id/profile_email_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/expand_account_box_indicator"
+                        android:layout_alignParentBottom="true"
+                        android:paddingBottom="16dp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="tamerbars@gmail.com"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:ellipsize="end" />
+
+                    <TextView
+                        android:id="@+id/profile_name_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/profile_email_text"
+                        android:layout_toLeftOf="@id/expand_account_box_indicator"
+                        android:maxLines="1"
+                        android:text="Tamer Barsbay"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:singleLine="true"
+                        android:ellipsize="end" />
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+            <!-- Drawer items -->
+            <LinearLayout
+                android:id="@+id/navdrawer_items_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/logo"
+                    android:scaleType="centerInside"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp" />
+
+            </LinearLayout>
+            
+        </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"></string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_location">Neighborhood</string>
+    <string name="title_activity_home"></string>
+    <string name="nav_hyde_park">Hyde Park</string>
+    <string name="nav_rewards">Rewards</string>
+    <string name="nav_events">Events</string>
+    <string name="nav_deals">Deals</string>
+    <string name="nav_settings">Settings</string>
+    <string name="title_activity_home_scrolled">Hyde Park</string>
+    <string name="title_activity_store_details"></string>
+    <string name="title_activity_product_details"></string>
+
+    <string name="ketchup_description">Only the firmest, juiciest, freshest tomatoes make it into our bottle. Every tomato in every bottle of Heinz® Ketchup comes from Heinz seeds and is grown by farmers we know and trust.</string>
+
+</resources>

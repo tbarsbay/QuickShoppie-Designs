@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tamerbarsbay.quickshoppiedesigns.ItemFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RECENT"
+        android:textSize="12sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:alpha=".56"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"/>
+
+    <GridView
+        android:id="@+id/home_list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:alpha=".56" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ALL"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:alpha=".56"
+        android:textSize="12sp"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"/>
+
+    <GridView
+        android:id="@+id/home_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3" />
+
+    <TextView android:id="@android:id/empty" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:gravity="center" />
+
+</LinearLayout>

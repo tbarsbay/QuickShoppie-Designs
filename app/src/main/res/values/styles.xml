@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="QS" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:actionButtonStyle">@style/ActionButton</item>
+        <item name="toolbarNavigationButtonStyle">@style/NavigationIcon</item>
+
+    </style>
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style
+        name="NavigationIcon"
+        parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:scaleX">.75</item>
+        <item name="android:scaleY">.75</item>
+    </style>
+
+    <style
+        name="ActionButton"
+        parent="@android:style/Widget.Holo.ActionButton" >
+        <item name="android:scaleX">.75</item>
+        <item name="android:scaleY">.75</item>
+        <item name="android:minWidth">40dp</item>
+    </style>
+
+    <style name="StoreDetailsListIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:tint">@color/primary</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+</resources>

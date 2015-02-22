@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="start"
     android:id="@+id/navdrawer"
-	android:background="#ffa0a0a0"
+	android:background="#ffe7e7e7"
 	android:fitsSystemWindows="true" >
         
         <LinearLayout 

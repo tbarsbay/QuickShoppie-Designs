@@ -11,9 +11,9 @@
     <color name="black">#000000</color>
     <color name="green">#4CAF50</color>
 
-    <color name="navdrawer_text_color">#000</color>
+    <color name="navdrawer_text_color">#ff525252</color>
     <color name="navdrawer_text_color_selected">#fff</color>
-    <color name="navdrawer_icon_tint">#000</color>
+    <color name="navdrawer_icon_tint">#ff525252</color>
     <color name="navdrawer_icon_tint_selected">#FFF</color>
     <color name="navdrawer_selected_background">@color/primary</color>
 

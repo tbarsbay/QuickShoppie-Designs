@@ -7,4 +7,5 @@
     android:layout_height="56dp"
     android:background="@color/primary"
     android:textColorPrimary="#FFFFFF"
+    android:elevation="4dp"
     app:titleTextAppearance="@style/ActionBar.TitleText" />

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reward_layout"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <FrameLayout
+        android:layout_width="72dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/reward_checkmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/star"
+            android:tint="#ff00a810"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/reward_store"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:text="Treasure Island"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/reward_userPoints"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:text="35pts"/>
+
+</LinearLayout>

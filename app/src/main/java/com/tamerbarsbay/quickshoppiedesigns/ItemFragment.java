@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
 
+import com.tamerbarsbay.quickshoppiedesigns.adapters.CustomAdapter;
 import com.tamerbarsbay.quickshoppiedesigns.dummy.DummyContent;
 
 /**

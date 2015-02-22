@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/event_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Title Here"
+        android:textColor="@color/primary"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginLeft="72dp"/>
+
+    <TextView
+        android:id="@+id/event_list_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Feb 2, 2015 3:00pm - 4:30pm"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="72dp"/>
+
+    <TextView
+        android:id="@+id/event_list_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="This is where the event description goes. A brief sentence or two about what the event is going to be."
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="72dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <FrameLayout
+            android:layout_width="72dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/place"
+                android:tint="@color/primary"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/event_list_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5460 South Harper Ave, Chicago, IL 60615"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <FrameLayout
+            android:layout_width="72dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/website"
+                android:tint="@color/primary"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/event_list_website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="www.eventwebsite.com/details"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

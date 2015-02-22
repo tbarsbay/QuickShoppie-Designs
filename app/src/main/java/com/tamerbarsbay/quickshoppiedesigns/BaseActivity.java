@@ -35,9 +35,10 @@ public class BaseActivity extends ActionBarActivity {
     // just all the possible items.
     protected static final int NAVDRAWER_ITEM_HYDE_PARK = 0;
     protected static final int NAVDRAWER_ITEM_REWARDS = 1;
-    protected static final int NAVDRAWER_ITEM_EVENTS = 2;
-    protected static final int NAVDRAWER_ITEM_DEALS = 3;
-    protected static final int NAVDRAWER_ITEM_SETTINGS = 4;
+    protected static final int NAVDRAWER_ITEM_DEALS = 2;
+    protected static final int NAVDRAWER_ITEM_EVENTS = 3;
+    protected static final int NAVDRAWER_ITEM_SHOPPING_CART = 4;
+    protected static final int NAVDRAWER_ITEM_SETTINGS = 5;
     protected static final int NAVDRAWER_ITEM_INVALID = -1;
     protected static final int NAVDRAWER_ITEM_SEPARATOR = -2;
 
@@ -45,8 +46,9 @@ public class BaseActivity extends ActionBarActivity {
     private static final int[] NAVDRAWER_TITLE_RES_ID = new int[] {
             R.string.nav_hyde_park,
             R.string.nav_rewards,
-            R.string.nav_events,
             R.string.nav_deals,
+            R.string.nav_events,
+            R.string.nav_shopping_cart,
             R.string.nav_settings
     };
 
@@ -54,8 +56,9 @@ public class BaseActivity extends ActionBarActivity {
     private static final int[] NAVDRAWER_ICON_RES_ID = new int[] {
             R.drawable.hotel,
             R.drawable.star,
-            R.drawable.event,
             R.drawable.coupon,
+            R.drawable.event,
+            R.drawable.cart,
             R.drawable.settings
     };
 
@@ -174,8 +177,9 @@ public class BaseActivity extends ActionBarActivity {
 
         mNavDrawerItems.add(NAVDRAWER_ITEM_HYDE_PARK);
         mNavDrawerItems.add(NAVDRAWER_ITEM_REWARDS);
-        mNavDrawerItems.add(NAVDRAWER_ITEM_EVENTS);
         mNavDrawerItems.add(NAVDRAWER_ITEM_DEALS);
+        mNavDrawerItems.add(NAVDRAWER_ITEM_EVENTS);
+        mNavDrawerItems.add(NAVDRAWER_ITEM_SHOPPING_CART);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SEPARATOR);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SETTINGS);
 
@@ -244,20 +248,23 @@ public class BaseActivity extends ActionBarActivity {
                 //finish();
                 break;
             case NAVDRAWER_ITEM_REWARDS:
-                //intent = new Intent(this, RewardsActivity.class);
-                //startActivity(intent);
+                intent = new Intent(this, RewardsActivity.class);
+                startActivity(intent);
                 //finish();
                 break;
             case NAVDRAWER_ITEM_EVENTS:
-                //intent = new Intent(this, EventsActivity.class);
-                //startActivity(intent);
+                intent = new Intent(this, EventsActivity.class);
+                startActivity(intent);
                 //finish();
                 break;
             case NAVDRAWER_ITEM_DEALS:
-                //intent = new Intent(this, DealsActivity.class);
-                //startActivity(intent);
+                intent = new Intent(this, DealsActivity.class);
+                startActivity(intent);
                 //finish();
                 break;
+            case NAVDRAWER_ITEM_SHOPPING_CART:
+                intent = new Intent(this, CartActivity.class);
+                startActivity(intent);
             case NAVDRAWER_ITEM_SETTINGS:
                 //finish();
                 break;

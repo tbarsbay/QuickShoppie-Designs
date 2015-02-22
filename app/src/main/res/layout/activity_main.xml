@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#ff4f4f4f">
+    android:background="@color/primary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,21 +20,23 @@
             android:layout_width="wrap_content"
             android:layout_height="120dp"
             android:src="@drawable/logo"
-            android:padding="16dp"/>
+            android:padding="16dp"
+            android:tint="@color/white"/>
 
         <EditText
+            android:id="@+id/login_email_edittext"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:hint="email"
             android:inputType="textEmailAddress"
-            android:textColorHint="#ffc2c2c2"/>
+            android:textColorHint="#ff353535"/>
 
         <EditText
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:hint="password"
             android:inputType="textPassword"
-            android:textColorHint="#ffc2c2c2"/>
+            android:textColorHint="#ff353535"/>
 
         <LinearLayout
             android:layout_width="220dp"
@@ -46,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="SIGN UP"
+                android:textStyle="bold"
                 android:background="@android:color/transparent"
                 android:textColor="#FFFFFF"/>
 
@@ -54,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="SIGN IN"
+                android:textStyle="bold"
                 android:background="@android:color/transparent"
                 android:textColor="#FFFFFF"/>
 
@@ -66,7 +70,7 @@
             android:layout_marginBottom="16dp"
             android:textSize="16sp"
             android:text="or sign in"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#000"/>
 
         <Button
             android:layout_width="220dp"
@@ -99,7 +103,7 @@
             android:textAllCaps="false"
             android:textSize="18sp"
             android:gravity="center"
-            android:background="#a2a3a3a3"/>
+            android:background="#ff6b6b6b"/>
 
     </LinearLayout>
 </ScrollView>

@@ -32,6 +32,7 @@
             android:textColorHint="#ff353535"/>
 
         <EditText
+            android:id="@+id/login_password_edittext"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:hint="password"
@@ -44,6 +45,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/main_signup_btn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

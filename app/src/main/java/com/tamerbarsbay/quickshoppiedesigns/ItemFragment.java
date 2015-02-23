@@ -12,7 +12,6 @@ import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.tamerbarsbay.quickshoppiedesigns.adapters.CustomAdapter;
-import com.tamerbarsbay.quickshoppiedesigns.dummy.DummyContent;
 import com.tamerbarsbay.quickshoppiedesigns.model.Category;
 
 import java.util.ArrayList;
@@ -83,23 +82,63 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
         if (mCategory != -1) {
             switch (mCategory) {
                 case CAT_ALL:
-                    recentCats.add(new Category("0", "Bar", R.drawable.store));
+                    recentCats.add(new Category("0", "Bar", R.drawable.bar));
                     recentCats.add(new Category("1", "Restaurant", R.drawable.restaurant));
+
+                    categories.add(new Category("0", "Grocery", R.drawable.groceryshop));
+                    categories.add(new Category("1", "Restaurant", R.drawable.restaurant));
+                    categories.add(new Category("2", "Bar", R.drawable.bar));
+                    categories.add(new Category("3", "Pet Food", R.drawable.petfood));
+                    categories.add(new Category("4", "Medicine", R.drawable.medicine));
+
+                    categories.add(new Category("0", "Clothes", R.drawable.clothes));
+                    categories.add(new Category("1", "Shoes", R.drawable.shoes));
+                    categories.add(new Category("2", "Jewelry", R.drawable.jewelry));
+
+                    categories.add(new Category("0", "Music", R.drawable.music));
+                    categories.add(new Category("1", "Movie", R.drawable.movie));
+                    categories.add(new Category("2", "Party", R.drawable.party));
+                    categories.add(new Category("0", "Play", R.drawable.play));
+                    categories.add(new Category("1", "Concert", R.drawable.concert));
+                    categories.add(new Category("2", "Socialize", R.drawable.socialize));
+
+                    categories.add(new Category("0", "Park", R.drawable.park));
+                    categories.add(new Category("1", "Relax", R.drawable.relax));
+                    categories.add(new Category("2", "Read", R.drawable.read));
+                    categories.add(new Category("2", "Books", R.drawable.buybooks));
+
+                    mAdapter1 = new CustomAdapter(getActivity(), R.layout.grid_item, recentCats);
                     break;
                 case CAT_FOOD:
+                    categories.add(new Category("0", "Grocery", R.drawable.groceryshop));
+                    categories.add(new Category("1", "Restaurant", R.drawable.restaurant));
+                    categories.add(new Category("2", "Bar", R.drawable.bar));
+                    categories.add(new Category("3", "Pet Food", R.drawable.petfood));
+                    categories.add(new Category("4", "Medicine", R.drawable.medicine));
                     break;
                 case CAT_APPAREL:
+                    categories.add(new Category("0", "Clothes", R.drawable.clothes));
+                    categories.add(new Category("1", "Shoes", R.drawable.shoes));
+                    categories.add(new Category("2", "Jewelry", R.drawable.jewelry));
                     break;
                 case CAT_ENTERTAINMENT:
+                    categories.add(new Category("0", "Music", R.drawable.music));
+                    categories.add(new Category("1", "Movie", R.drawable.movie));
+                    categories.add(new Category("2", "Party", R.drawable.party));
+                    categories.add(new Category("0", "Play", R.drawable.play));
+                    categories.add(new Category("1", "Concert", R.drawable.concert));
+                    categories.add(new Category("2", "Socialize", R.drawable.socialize));
                     break;
                 case CAT_OTHER:
+                    categories.add(new Category("0", "Park", R.drawable.park));
+                    categories.add(new Category("1", "Relax", R.drawable.relax));
+                    categories.add(new Category("2", "Read", R.drawable.read));
+                    categories.add(new Category("2", "Books", R.drawable.buybooks));
                     break;
             }
-        }
 
-        // TODO: Change Adapter to display your content
-        mAdapter1 = new CustomAdapter(getActivity(), R.layout.grid_item, DummyContent.ITEMS_RECENT);
-        mAdapter2 = new CustomAdapter(getActivity(), R.layout.grid_item, DummyContent.ITEMS_ALL);
+            mAdapter2 = new CustomAdapter(getActivity(), R.layout.grid_item, categories);
+        }
     }
 
     @Override
@@ -107,15 +146,30 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_item_grid, container, false);
 
-        // Set the adapter
         mListView1 = (AbsListView) view.findViewById(R.id.home_list1);
-        ((AdapterView<ListAdapter>) mListView1).setAdapter(mAdapter1);
+
+        TextView recentLabel = (TextView) view.findViewById(R.id.home_recent_label);
+        TextView allLabel = (TextView) view.findViewById(R.id.home_all_label);
+        View divider = view.findViewById(R.id.home_divider);
+
+        if (mCategory != CAT_ALL) {
+            mListView1.setVisibility(View.GONE);
+
+            recentLabel.setVisibility(View.GONE);
+            allLabel.setVisibility(View.GONE);
+            divider.setVisibility(View.GONE);
+        } else {
+            mListView1.setOnItemClickListener(this);
+            ((AdapterView<ListAdapter>) mListView1).setAdapter(mAdapter1);
+            mListView1.setVisibility(View.VISIBLE);
+
+            recentLabel.setVisibility(View.VISIBLE);
+            allLabel.setVisibility(View.VISIBLE);
+            divider.setVisibility(View.VISIBLE);
+        }
 
         mListView2 = (AbsListView) view.findViewById(R.id.home_list2);
         ((AdapterView<ListAdapter>) mListView2).setAdapter(mAdapter2);
-
-        // Set OnItemClickListener so we can be notified on item clicks
-        mListView1.setOnItemClickListener(this);
         mListView2.setOnItemClickListener(this);
 
         return view;
@@ -144,7 +198,7 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
         if (null != mListener) {
             // Notify the active callbacks interface (the activity, if the
             // fragment is attached to one) that an item has been selected.
-            mListener.onFragmentInteraction(DummyContent.ITEMS_RECENT.get(position).id);
+            //mListener.onFragmentInteraction("0");
         }
     }
 
@@ -172,7 +226,6 @@ public class ItemFragment extends Fragment implements AbsListView.OnItemClickLis
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
         public void onFragmentInteraction(String id);
     }
 

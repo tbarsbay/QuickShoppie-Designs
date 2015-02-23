@@ -245,26 +245,23 @@ public class BaseActivity extends ActionBarActivity {
             case NAVDRAWER_ITEM_HYDE_PARK:
                 intent = new Intent(this, HomeActivity.class);
                 startActivity(intent);
-                //finish();
                 break;
             case NAVDRAWER_ITEM_REWARDS:
                 intent = new Intent(this, RewardsActivity.class);
                 startActivity(intent);
-                //finish();
                 break;
             case NAVDRAWER_ITEM_EVENTS:
                 intent = new Intent(this, EventsActivity.class);
                 startActivity(intent);
-                //finish();
                 break;
             case NAVDRAWER_ITEM_DEALS:
                 intent = new Intent(this, DealsActivity.class);
                 startActivity(intent);
-                //finish();
                 break;
             case NAVDRAWER_ITEM_SHOPPING_CART:
                 intent = new Intent(this, CartActivity.class);
                 startActivity(intent);
+                break;
             case NAVDRAWER_ITEM_SETTINGS:
                 intent = new Intent(this, SettingsActivity.class);
                 startActivity(intent);

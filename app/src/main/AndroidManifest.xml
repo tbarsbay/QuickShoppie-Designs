@@ -24,10 +24,6 @@
             android:label="@string/title_activity_home" >
         </activity>
         <activity
-            android:name=".HomeScrolledActivity"
-            android:label="@string/title_activity_home_scrolled" >
-        </activity>
-        <activity
             android:name=".StoreDetailsActivity"
             android:label="@string/title_activity_store_details" >
         </activity>
@@ -54,6 +50,10 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
         </activity>
     </application>
 

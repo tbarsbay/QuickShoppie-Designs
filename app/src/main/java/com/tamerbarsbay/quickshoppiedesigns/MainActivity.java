@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -21,6 +22,23 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(), HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        EditText emailET = (EditText) findViewById(R.id.login_email_edittext);
+        EditText passwordET = (EditText) findViewById(R.id.login_password_edittext);
+
+        final String inputEmail = emailET.getText().toString();
+        final String inputPassword = passwordET.getText().toString();
+
+        Button signup = (Button) findViewById(R.id.main_signup_btn);
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), SignUpActivity.class);
+                intent.putExtra("email", inputEmail);
+                intent.putExtra("password", inputPassword);
                 startActivity(intent);
             }
         });

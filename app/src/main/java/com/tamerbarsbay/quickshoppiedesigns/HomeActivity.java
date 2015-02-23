@@ -2,7 +2,6 @@ package com.tamerbarsbay.quickshoppiedesigns;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -55,13 +54,6 @@ public class HomeActivity extends BaseActivity implements ItemFragment.OnFragmen
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_location) {
-            Intent intent = new Intent(this, HomeScrolledActivity.class);
-            startActivity(intent);
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -80,17 +72,17 @@ public class HomeActivity extends BaseActivity implements ItemFragment.OnFragmen
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return ItemFragment.newInstance("string1", "string2");
+                    return ItemFragment.newInstance(ItemFragment.CAT_ALL);
                 case 1:
-                    return ItemFragment.newInstance("string1", "string2");
+                    return ItemFragment.newInstance(ItemFragment.CAT_FOOD);
                 case 2:
-                    return ItemFragment.newInstance("string1", "string2");
+                    return ItemFragment.newInstance(ItemFragment.CAT_APPAREL);
                 case 3:
-                    return ItemFragment.newInstance("string1", "string2");
+                    return ItemFragment.newInstance(ItemFragment.CAT_ENTERTAINMENT);
                 case 4:
-                    return ItemFragment.newInstance("string1", "string2");
+                    return ItemFragment.newInstance(ItemFragment.CAT_OTHER);
                 default:
-                    return ItemFragment.newInstance("string1", "string2");
+                    return ItemFragment.newInstance(ItemFragment.CAT_ALL);
             }
         }
 

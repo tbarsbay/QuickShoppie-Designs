@@ -243,7 +243,7 @@ public class BaseActivity extends ActionBarActivity {
         Intent intent;
         switch (item) {
             case NAVDRAWER_ITEM_HYDE_PARK:
-                intent = new Intent(this, MainActivity.class);
+                intent = new Intent(this, HomeActivity.class);
                 startActivity(intent);
                 //finish();
                 break;
@@ -266,7 +266,8 @@ public class BaseActivity extends ActionBarActivity {
                 intent = new Intent(this, CartActivity.class);
                 startActivity(intent);
             case NAVDRAWER_ITEM_SETTINGS:
-                //finish();
+                intent = new Intent(this, SettingsActivity.class);
+                startActivity(intent);
                 break;
         }
     }

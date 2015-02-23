@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Preference
+        android:key="pref_change_name"
+        android:title="Display name"
+        android:summary="Change your display name as it appears in the app" />
+
+    <Preference
+        android:key="pref_change_password"
+        android:title="Change Password" />
+
+    <ListPreference
+        android:key="pref_neighborhood"
+        android:title="Neighborhood"
+        android:entries="@array/pref_neighborhoods"
+        android:entryValues="@array/pref_neighborhoods_values"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:defaultValue="1" />
+
+    <Preference
+        android:key="pref_purchase_history"
+        android:title="View purchase history"
+        android:summary="A summary of all the purchases made on this QuickShoppie account" />
+
+    <Preference
+        android:key="pref_ntf_settings"
+        android:title="Notification settings" />
+
+    <Preference
+        android:key="pref_terms_and_conditions"
+        android:title="Terms and Conditions" />
+
+    <Preference
+        android:key="pref_privacy_policy"
+        android:title="Privacy Policy" />
+
+    <Preference
+        android:key="pref_licences"
+        android:title="Open Source Licenses" />
+
+    <Preference
+        android:key="pref_faqs"
+        android:title="Frequently Asked Questions" />
+
+    <Preference
+        android:key="pref_contact_us"
+        android:title="Contact Us"
+        android:summary="Contact us with any questions, feedback, or suggestions you might have." />
+
+    <Preference
+        android:key="pref_logout"
+        android:title="Logout"
+        android:summary="Sign out of QuickShoppie" />
+
+</PreferenceScreen>

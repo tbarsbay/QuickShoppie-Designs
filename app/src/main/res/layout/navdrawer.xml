@@ -22,8 +22,10 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:id="@+id/profile_cover_image" />
+                    android:scaleType="centerInside"
+                    android:id="@+id/profile_cover_image"
+                    android:src="@drawable/logo"
+                    android:alpha=".50"/>
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -102,7 +104,8 @@
                     android:src="@drawable/logo"
                     android:scaleType="centerInside"
                     android:paddingLeft="16dp"
-                    android:paddingRight="16dp" />
+                    android:paddingRight="16dp"
+                    android:visibility="invisible"/>
 
             </LinearLayout>
             

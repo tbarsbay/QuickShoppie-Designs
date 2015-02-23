@@ -51,6 +51,10 @@
             android:name=".RewardsActivity"
             android:label="@string/title_activity_rewards" >
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,10 +1,12 @@
 package com.tamerbarsbay.quickshoppiedesigns;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.tamerbarsbay.quickshoppiedesigns.model.CartItem;
@@ -58,6 +60,14 @@ public class CartActivity extends BaseActivity {
         totalText.setText("$" + df.format(total));
 
         createCartItems();
+
+        LinearLayout deliverLayout = (LinearLayout) findViewById(R.id.cart_layout_deliver);
+        deliverLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getBaseContext(), DeliveryActivity.class));
+            }
+        });
     }
 
     private void createCartItems() {

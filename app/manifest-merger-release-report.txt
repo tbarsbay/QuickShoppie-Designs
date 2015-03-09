@@ -13,60 +13,98 @@ ADDED from AndroidManifest.xml:2:1
 	android:versionCode
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
-application
+uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:5:5
+	android:name
+		ADDED from AndroidManifest.xml:5:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:6:5
+	android:name
+		ADDED from AndroidManifest.xml:6:22
+application
+ADDED from AndroidManifest.xml:8:5
 MERGED from com.android.support:appcompat-v7:21.0.3:16:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 MERGED from com.android.support:support-v13:21.0.3:16:5
 MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
-		ADDED from AndroidManifest.xml:8:9
+		ADDED from AndroidManifest.xml:11:9
 	android:allowBackup
-		ADDED from AndroidManifest.xml:6:9
-	android:icon
-		ADDED from AndroidManifest.xml:7:9
-	android:theme
 		ADDED from AndroidManifest.xml:9:9
+	android:icon
+		ADDED from AndroidManifest.xml:10:9
+	android:theme
+		ADDED from AndroidManifest.xml:12:9
 activity#com.tamerbarsbay.quickshoppiedesigns.MainActivity
-ADDED from AndroidManifest.xml:10:9
+ADDED from AndroidManifest.xml:13:9
 	android:label
-		ADDED from AndroidManifest.xml:12:13
+		ADDED from AndroidManifest.xml:15:13
 	android:name
-		ADDED from AndroidManifest.xml:11:13
+		ADDED from AndroidManifest.xml:14:13
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:13:13
+ADDED from AndroidManifest.xml:16:13
 action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:14:17
+ADDED from AndroidManifest.xml:17:17
 	android:name
-		ADDED from AndroidManifest.xml:14:25
+		ADDED from AndroidManifest.xml:17:25
 category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:16:17
+ADDED from AndroidManifest.xml:19:17
 	android:name
-		ADDED from AndroidManifest.xml:16:27
+		ADDED from AndroidManifest.xml:19:27
 activity#com.tamerbarsbay.quickshoppiedesigns.HomeActivity
-ADDED from AndroidManifest.xml:19:9
+ADDED from AndroidManifest.xml:22:9
 	android:label
-		ADDED from AndroidManifest.xml:21:13
-	android:name
-		ADDED from AndroidManifest.xml:20:13
-activity#com.tamerbarsbay.quickshoppiedesigns.HomeScrolledActivity
-ADDED from AndroidManifest.xml:23:9
-	android:label
-		ADDED from AndroidManifest.xml:25:13
-	android:name
 		ADDED from AndroidManifest.xml:24:13
+	android:name
+		ADDED from AndroidManifest.xml:23:13
 activity#com.tamerbarsbay.quickshoppiedesigns.StoreDetailsActivity
-ADDED from AndroidManifest.xml:27:9
+ADDED from AndroidManifest.xml:26:9
 	android:label
-		ADDED from AndroidManifest.xml:29:13
-	android:name
 		ADDED from AndroidManifest.xml:28:13
-activity#com.tamerbarsbay.quickshoppiedesigns.ProductDetailsActivity
-ADDED from AndroidManifest.xml:31:9
-	android:label
-		ADDED from AndroidManifest.xml:33:13
 	android:name
+		ADDED from AndroidManifest.xml:27:13
+activity#com.tamerbarsbay.quickshoppiedesigns.ProductDetailsActivity
+ADDED from AndroidManifest.xml:30:9
+	android:label
 		ADDED from AndroidManifest.xml:32:13
+	android:name
+		ADDED from AndroidManifest.xml:31:13
+activity#com.tamerbarsbay.quickshoppiedesigns.CartActivity
+ADDED from AndroidManifest.xml:34:9
+	android:label
+		ADDED from AndroidManifest.xml:36:13
+	android:name
+		ADDED from AndroidManifest.xml:35:13
+activity#com.tamerbarsbay.quickshoppiedesigns.EventsActivity
+ADDED from AndroidManifest.xml:38:9
+	android:label
+		ADDED from AndroidManifest.xml:40:13
+	android:name
+		ADDED from AndroidManifest.xml:39:13
+activity#com.tamerbarsbay.quickshoppiedesigns.DealsActivity
+ADDED from AndroidManifest.xml:42:9
+	android:label
+		ADDED from AndroidManifest.xml:44:13
+	android:name
+		ADDED from AndroidManifest.xml:43:13
+activity#com.tamerbarsbay.quickshoppiedesigns.RewardsActivity
+ADDED from AndroidManifest.xml:46:9
+	android:label
+		ADDED from AndroidManifest.xml:48:13
+	android:name
+		ADDED from AndroidManifest.xml:47:13
+activity#com.tamerbarsbay.quickshoppiedesigns.SettingsActivity
+ADDED from AndroidManifest.xml:50:9
+	android:label
+		ADDED from AndroidManifest.xml:52:13
+	android:name
+		ADDED from AndroidManifest.xml:51:13
+activity#com.tamerbarsbay.quickshoppiedesigns.SignUpActivity
+ADDED from AndroidManifest.xml:54:9
+	android:label
+		ADDED from AndroidManifest.xml:56:13
+	android:name
+		ADDED from AndroidManifest.xml:55:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:21.0.3:15:5

@@ -7,4 +7,5 @@
 .idea
 *.bak
 *.bat
+/Other files
 *.xlsx

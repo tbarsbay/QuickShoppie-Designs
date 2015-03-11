@@ -34,18 +34,17 @@ public class BaseActivity extends ActionBarActivity {
     // Symbols for navigation drawer. Not necessarily the items present,
     // just all the possible items.
     protected static final int NAVDRAWER_ITEM_HYDE_PARK = 0;
-    protected static final int NAVDRAWER_ITEM_REWARDS = 1;
-    protected static final int NAVDRAWER_ITEM_DEALS = 2;
-    protected static final int NAVDRAWER_ITEM_EVENTS = 3;
-    protected static final int NAVDRAWER_ITEM_SHOPPING_CART = 4;
-    protected static final int NAVDRAWER_ITEM_SETTINGS = 5;
+    //protected static final int NAVDRAWER_ITEM_REWARDS = 1;
+    protected static final int NAVDRAWER_ITEM_DEALS = 1;
+    protected static final int NAVDRAWER_ITEM_EVENTS = 2;
+    protected static final int NAVDRAWER_ITEM_SHOPPING_CART = 3;
+    protected static final int NAVDRAWER_ITEM_SETTINGS = 4;
     protected static final int NAVDRAWER_ITEM_INVALID = -1;
     protected static final int NAVDRAWER_ITEM_SEPARATOR = -2;
 
     // Titles for navigation drawer items (indices must correspond to those above)
     private static final int[] NAVDRAWER_TITLE_RES_ID = new int[] {
             R.string.nav_hyde_park,
-            R.string.nav_rewards,
             R.string.nav_deals,
             R.string.nav_events,
             R.string.nav_shopping_cart,
@@ -55,7 +54,6 @@ public class BaseActivity extends ActionBarActivity {
     // Icons for navigation drawer items (indices must correspond to above array)
     private static final int[] NAVDRAWER_ICON_RES_ID = new int[] {
             R.drawable.hotel,
-            R.drawable.star,
             R.drawable.coupon,
             R.drawable.event,
             R.drawable.cart,
@@ -176,7 +174,7 @@ public class BaseActivity extends ActionBarActivity {
         mNavDrawerItems.clear();
 
         mNavDrawerItems.add(NAVDRAWER_ITEM_HYDE_PARK);
-        mNavDrawerItems.add(NAVDRAWER_ITEM_REWARDS);
+        //mNavDrawerItems.add(NAVDRAWER_ITEM_REWARDS);
         mNavDrawerItems.add(NAVDRAWER_ITEM_DEALS);
         mNavDrawerItems.add(NAVDRAWER_ITEM_EVENTS);
         mNavDrawerItems.add(NAVDRAWER_ITEM_SHOPPING_CART);
@@ -246,10 +244,11 @@ public class BaseActivity extends ActionBarActivity {
                 intent = new Intent(this, HomeActivity.class);
                 startActivity(intent);
                 break;
+            /*
             case NAVDRAWER_ITEM_REWARDS:
                 intent = new Intent(this, RewardsActivity.class);
                 startActivity(intent);
-                break;
+                break; */
             case NAVDRAWER_ITEM_EVENTS:
                 intent = new Intent(this, EventsActivity.class);
                 startActivity(intent);

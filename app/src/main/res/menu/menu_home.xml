@@ -9,8 +9,16 @@
         app:showAsAction="always" />
 
     <item
+        android:id="@+id/action_goto_cart"
+        android:title="Shopping cart"
+        android:icon="@drawable/cart_white"
+        app:showAsAction="always" />
+
+    <!--
+
+    <item
         android:id="@+id/action_location"
         android:title="@string/action_location"
         android:icon="@drawable/location"
-        app:showAsAction="always" />
+        app:showAsAction="always" /> -->
 </menu>

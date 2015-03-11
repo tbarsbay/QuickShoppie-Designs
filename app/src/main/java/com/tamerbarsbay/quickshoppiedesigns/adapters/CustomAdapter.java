@@ -1,6 +1,7 @@
 package com.tamerbarsbay.quickshoppiedesigns.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.tamerbarsbay.quickshoppiedesigns.R;
+import com.tamerbarsbay.quickshoppiedesigns.StoreDetailsActivity;
 import com.tamerbarsbay.quickshoppiedesigns.model.Category;
 
 import java.util.ArrayList;
@@ -37,18 +39,27 @@ public class CustomAdapter extends ArrayAdapter<Category> {
             v = inflater.inflate(R.layout.grid_item, null);
         }
 
-        // make the first item go to the StoreDetailsActivity just for demonstration purposes
+        // make the first item go to the StoreDetailsActivity just for demonstration purpose
+        //TODO this is temporary
+        if (position == 0) {
+            v.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    mContext.startActivity(new Intent(mContext, StoreDetailsActivity.class));
+                }
+            });
+        }
+
+        //TODO uncomment when Search page is ready
+        /*
         v.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO uncomment when Search page is ready
-                /*
                 Intent intent = new Intent(mContext, SearchActivity.class);
                 intent.putExtra("value", category.title);
                 mContext.startActivity(intent);
-                */
             }
-        });
+        }); */
 
         TextView title = (TextView) v.findViewById(R.id.grid_text);
         ImageView icon = (ImageView) v.findViewById(R.id.grid_icon);

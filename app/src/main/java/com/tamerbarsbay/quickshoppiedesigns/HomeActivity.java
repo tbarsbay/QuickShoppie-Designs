@@ -2,6 +2,7 @@ package com.tamerbarsbay.quickshoppiedesigns;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -53,6 +54,10 @@ public class HomeActivity extends BaseActivity implements ItemFragment.OnFragmen
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        if (id == R.id.action_goto_cart) {
+            startActivity(new Intent(this, CartActivity.class));
+            return true;
+        }
 
         return super.onOptionsItemSelected(item);
     }

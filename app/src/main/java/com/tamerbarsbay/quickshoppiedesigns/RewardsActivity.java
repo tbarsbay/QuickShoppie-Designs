@@ -13,10 +13,11 @@ import java.util.ArrayList;
 
 public class RewardsActivity extends BaseActivity {
 
+    /*
     @Override
     protected int getSelfNavDrawerItem() {
         return NAVDRAWER_ITEM_REWARDS;
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
